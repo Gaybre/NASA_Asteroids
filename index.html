@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Near Earth Objects</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-		}
-		.container {
-			height: 100vh;
-			display: grid;
-			grid-template: 150px 1fr 200px / 250px 1fr;
-			grid-gap: 10px;
-			grid-template-areas: "header header"
-								 "leftSection mainSection"
-								 "footer footer";
-		}
-		.sec {
-			border: 2px solid lightgreen;
-			border-radius: 10px;
-		}
-		.header {
-			grid-area: header;
-		}
-		.leftSection {
-			grid-area: leftSection;
-		}
-		.mainSection {
-			grid-area: mainSection;
-		}
-		.footer {
-			grid-area:footer;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<section class="sec header">header</section>
-		<section class="sec leftSection">leftSection</section>
-		<section class="sec mainSection">mainSection</section>
-		<section class="sec footer">footer</section>
-	</div>
-
-	<script type="text/javascript" src="index.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Near Earth Objects</title>
+		<style>
+			body {
+				background-color: #c2c2c2;
+			}
+		</style>
+	<!-- 	<style type="text/css">
+			body {
+				margin: 0;
+			}
+			.container {
+				padding: 10px;
+				height: 100vh;
+				display: grid;
+				grid-template: 150px 1fr 100px / 250px 1fr;
+				grid-gap: 10px;
+				grid-template-areas: "header header"
+									"leftSection mainSection"
+									"footer footer";
+			}
+			.sec {
+				padding: 10px;
+				border: 2px solid lightgreen;
+				border-radius: 10px;
+			}
+			.header {
+				grid-area: header;
+			}
+			.leftSection {
+				grid-area: leftSection;
+			}
+			.mainSection {
+				grid-area: mainSection;
+			}
+			.footer {
+				grid-area:footer;
+			}
+		</style> -->
+	</head>
+	<body>
+		<div class="container" id="container"></div>
+	<!-- 	<div class="container">
+			<section class="sec header">header</section>
+			<section class="sec leftSection">leftSection</section>
+			<section class="sec mainSection">mainSection</section>
+			<section class="sec footer">footer</section>
+		</div> -->
+		<script type="text/javascript" src="./src/getData.js"></script>
+		<script type="text/javascript" src="./src/template.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>
